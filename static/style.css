@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: #f9f9f9;
+  color: #333;
+    cursor: url('/static/images/football-cursor.png') 16 16, auto; /* custom football cursor */
+}
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+table {
+  width: 100%;   /* leave space on sides */
+  margin: 0px auto;          /* top/bottom + center it */
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;           /* rounds corners neatly */
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #04080c;
+  color: white;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+button, /* Button style */
+.btn {
+  display: inline-block;
+  width: 150px;              /* same width for all */
+  text-align: center;        /* center text inside */
+  padding: 10px 0;           /* adjust for vertical spacing */
+  margin: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(to bottom, #4facfe, #007bff); /* blue gradient */
+  border: 2px solid #0056b3;
+  border-radius: 30px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* stronger 3D look */
+  transition: all 0.3s ease;
+  cursor: url('/static/images/football-cursor.png'), pointer; /* custom football cursor */
+}
+
+/* Hover effect */
+.btn:hover {
+  background: linear-gradient(to bottom, #6fc3ff, #0056b3); /* lighter on top */
+  color: #fff;
+  transform: translateY(-2px); /* lift effect */
+  box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+}
+
+/* Active page button */
+.btn.active {
+  background: linear-gradient(to bottom, #b0b0b0, #7f7f7f); /* gray gradient */
+  color: white;
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.3), 0 4px 6px rgba(0,0,0,0.2);
+  cursor: default; /* optional: show it’s not clickable */
+}
+.btn.active:hover {
+  transform: none;
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.3), 0 4px 6px rgba(0,0,0,0.2);
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap; /* allows buttons to drop to the next line if needed */
+  justify-content: left; /* align buttons to the left */
+  gap: 10px; /* space between buttons */
+  background-color:rgb(59, 62, 63);
+  border-bottom: 2px solid #04080c; /* dark border */
+  padding: 6px 0; /* vertical padding */ 
+  margin-bottom: 0px; /* space below buttons */
+  margin-top: 0px; /* space above buttons */
+  margin-left: 0px; /* align with page edge */
+  margin-right:0px; /* align with page edge */
+  position: relative; /* keeps nav at top */
+  top:0;
+  left:0;
+  width: 100%; /* full width */
+  z-index: 1000; /* ensures it stays above other content */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow */
+  border-radius: 0 0 10px 10px; /* rounded bottom corners */
+}
+.content {
+  margin-top: 0px; /*pushes text down below nav*/
+  padding:20px;
+}
+@media (max-width: 600px) {
+  .btn {
+    width: 100px;     /* smaller buttons on small screens */
+    font-size: 14px;
+    padding: 8px 0;
+  }
+}
+/* Bears-themed gradient text for the homepage counter */
+#bears-counter {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to right, #0B162A, #C83803); /* Bears navy → orange */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Optional: make it responsive on smaller screens */
+@media (max-width: 768px) {
+  #bears-counter {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  #bears-counter {
+    font-size: 28px;
+  }
+}
+tr.leader {
+  background-color: #8af5a3; /* light green */
+  color: #000000;            /* dark green text for readability */
+  font-weight: bold;
+}

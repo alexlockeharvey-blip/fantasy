@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fantasy League Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Welcome to the Fantasy League Dashboard</h1>
+
+  <div style="text-align:center; margin-top: 50px;">
+    <a href="/league1" class="btn">Go to W.A.G.S. League</a>
+    <a href="/league2" class="btn">Go to Bookkeepers League</a>
+  </div>
+  
+  <div id="bears-counter">
+    Time since Bears last playoff win:<br>
+    <span id="timer"></span>
+  </div>
+
+  <img src="static/images/bears_logo.png" alt="Bears Logo" style="display:block; margin: 20px auto; width:150px;">
+
+  <script src="{{ url_for('static', filename='js/timer.js') }}"></script>
+</body>
+</html>

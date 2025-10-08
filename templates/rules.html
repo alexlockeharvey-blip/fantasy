@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ league_name }} - Rules</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>{{ league_name }} - Leauge Rules</h1>
+  <a href="/league2" class="btn">Back to Dashboard</a>
+  <h2>Herein are the rules set forth by your fearless leaders Brown and Vest. Read them, understand them, feel them.</h2>
+  <section>Keepers Rules</section>
+    <ul>
+      <li>You may keep 3 players of any position</li>
+      <li>Keepers must be declared 1 week before the draft</li>
+      <li>Keepers will cost you a draft pick based on the pick you used to select them the previous year</li>
+        <ol>For every additional year you keep a player after the first year, you will lose the round you selected them + 1 round per year</ol>
+        <ol>Example: If you drafted a player in the 5th round last year, and you are keeping them for a second year, you will lose your 6th round pick this year</ol>
+        <ol>If you keep a player in the first round, you will lose a first and fifth round pick the next year</ol>
+        <ol>The same incremental year increase applies to these players</ol>
+        <ol>Example: If you keep a player drafted in the first round for two years, you will lose your first and fourth round pick</ol>
+      <li>You may only keep players if you have the picks to keep them</li>
+      <li>If you trade away a pick that you would have used to keep a player, you forfeit the right to keep that player</li>
+        <ol>Example: If you want to keep two first round players, you must have two first round picks, a fifth round pick, and a fourth round pick</ol>
+    </ul>
+  <div class="rules">
+
+</body>
+</html>

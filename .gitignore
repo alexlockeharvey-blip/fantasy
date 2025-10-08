@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment (Windows)
+venv/
+Scripts/
+Lib/
+Include/
+
+# VS Code settings
+.vscode/
+
+# Environment variables and config
+.env
+*.env
+
+# Byte-compiled / optimized / DLL files
+*.pyo
+*.pyd
+*.dll
+*.so
+
+# Logs and databases
+*.log
+*.sqlite3
+instance/
