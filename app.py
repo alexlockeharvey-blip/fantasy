@@ -171,18 +171,21 @@ def league_page(league_key):
     )
 
 #Bookeeper subpages
-@app.route("/bookkeepers/rules")
-def bookkeepers_rule():
-    return render_template("rules.html")
-@app.route("/bookkeepers/poll")
-def bookkeepers_poll():
-    return render_template("bookkeepers_poll.html")
-@app.route("/bookkeepers/stats")
-def bookkeepers_stats():
-    return render_template("bookkeepers_stats.html")
-@app.route("/bookkeepers/players")
-def bookkeepers_players():
-    return render_template("bookkeepers_players.html")
+# @app.route("/bookkeepers/rules")
+# def bookkeepers_rule():
+#     return render_template("rules.html")
+# @app.route("/bookkeepers/poll")
+# def bookkeepers_poll():
+#     return render_template("bookkeepers_poll.html")
+# @app.route("/bookkeepers/stats")
+# def bookkeepers_stats():
+#     return render_template("bookkeepers_stats.html")
+# @app.route("/bookkeepers/players")
+# def bookkeepers_players():
+#     return render_template("bookkeepers_players.html")
+@app.route("/bookkeepers/incomplete")
+def incomplete():
+    return render_template("incomplete.html")
 # API endpoint
 @app.route("/api/<league_key>")
 def api_standings(league_key):

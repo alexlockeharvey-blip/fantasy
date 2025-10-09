@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Incomplete Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="nav">
+        <a href="/league2" class="btn">Back to Dashboard</a>
+    </div>
+    <div class="content">
+     <h1> Warning this page is INCOMPLETE</h1>
+     <h2 style="margin-top: 40px; text-align: center;"> 
+        Vest is a lazy bum, please check back later
+        </h2>
+     <img src="{{ url_for('static', filename='images/yellow_warning.png') }}" 
+     alt="Warning" style="display:block; margin: 20px auto; width:150px;">
+    </div>
+</body>
+</html>
