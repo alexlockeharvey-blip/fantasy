@@ -7,7 +7,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 # League configuration
 LEAGUES = {
     "league1": {
-        "id": "1268779385725390848",
+        "id": "1384247938116513792",
         "name": "W.A.G.S. Dashboard",
         "teams": {
             "Browns": ["pitonthefield", "anthonybrown53"],
@@ -20,7 +20,7 @@ LEAGUES = {
         "show_teams": True
     },
     "league2": {  # Bookkeepers League
-        "id": "1216902891705466880",
+        "id": "1375537069140508672",
         "name": "Bookkeepers Dashboard",
         "teams": {},
         "show_teams": False
