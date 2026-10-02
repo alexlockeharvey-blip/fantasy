@@ -1,5 +1,5 @@
 // Set the date/time of last win
-const lastWin = new Date('2011-01-16T00:00:00'); // adjust time if you want
+const lastWin = new Date('2026-01-10T00:00:00'); // adjust time if you want
 
 function updateTimer() {
   const now = new Date();

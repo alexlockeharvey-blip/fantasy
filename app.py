@@ -13,7 +13,9 @@ LEAGUES = {
             "Browns": ["pitonthefield", "anthonybrown53"],
             "Wilsons": ["bellyconklin", "JacksonWilson54"],
             "MD+PA": ["TheVester", "clairebear000"],
-            "MD+PHD": ["nkbryson", "sammyslay1129"]
+            "MD+PHD": ["nkbryson", "sammyslay1129"],
+            "Sparky and the Stieb": ["sparknuts", "juicysteve711"],
+            "MPH+PHD": ["gcobble","samfenske"]
         },
         "show_teams": True
     },
@@ -34,6 +36,10 @@ def root():
 @app.route("/home")
 def landing_page():
     return render_template("home.html", league_key="home")
+
+@app.route("/memes")
+def memes_page():
+    return render_template("incomplete.html", league_key="memes")
 
 # Fetch league data
 def fetch_data(league_key):
